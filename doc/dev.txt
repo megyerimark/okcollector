@@ -1,0 +1,22 @@
+A program a jsoup library-t használja a weboldal tartalmának
+letöltésére:
+
+https://jsoup.org/
+
+
+
+__CollectorController__
+
+A következő gombokat kell kezelje:
+  * Beillesztés
+  * Indítás
+  * Névjegy
+  * Kilépés
+
+__WordsController__
+
+A következő gombokat kell kezelje:
+  * Törlés
+  * Kisbetű
+  * Szűrés
+  * Mentés

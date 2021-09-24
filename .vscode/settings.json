@@ -1,0 +1,61 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/home/andras/Library/jsoup/jsoup-1.14.2.jar"
+    ],
+    "psi-header.config": {
+        "forceToTop": true,
+        "blankLinesAfter": 1,
+        "license": "Custom"
+    },    
+    "psi-header.variables": [
+        ["company", "Sallai Andras"],
+        ["author", "Sallai Andras"],
+        ["authoremail", "andrewteki@gmail.com"]
+    ],
+    "psi-header.changes-tracking": {
+        "isActive": true,
+        "modAuthor": "Modified By: ",
+        "modDate": "Last Modified: ",
+        "modDateFormat": "date",
+        "include": [],
+        "exclude": [
+            "markdown",
+            "json",
+            "jsonc"
+        ],
+        "excludeGlob": [
+            "out/**",
+            "src/**/*.xyz"
+        ],
+        "autoHeader": "manualSave"
+    },    
+    "psi-header.license-text": [
+        "GNU GPL v2",        
+    ],
+    "psi-header.templates": [
+        {
+            "language": "*",
+            "template": [
+                "File: <<filename>>",
+                "Created Date: <<filecreated('YYYY-MM-DD HH:mm:ss')>>",
+                "Author: <<author>>",
+                "Github: https://github.com/andteki"
+                "-----",
+                "Last Modified: <<filecreated('YYYY-MM-DD')>>",
+                "Modified By: ",
+                "-----",
+                "Copyright (c) <<year>> <<company>>"
+                "",
+                "<<licensetext>>",
+            ],
+            "changeLogCaption": "HISTORY:",
+            "changeLogHeaderLineCount": 2,
+            "changeLogEntryTemplate": [
+                "<<dateformat('YYYY-MM-DD')>>\t<<initials>>\t"
+            ]
+        },
+        }],
+}
