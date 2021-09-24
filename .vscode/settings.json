@@ -57,5 +57,5 @@
                 "<<dateformat('YYYY-MM-DD')>>\t<<initials>>\t"
             ]
         },
-        }],
+    ],
 }
