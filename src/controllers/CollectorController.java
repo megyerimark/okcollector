@@ -47,13 +47,14 @@ public class CollectorController extends MainController {
 
         //Indul a szógyűjtés
         mainWindow.startButton.addActionListener(event -> {
-            String url = mainWindow.urlField.getText();
-            if (url.isEmpty()) {
-                url = "https://index.hu";
+            // URL
+            String utvonal = mainWindow.urlField.getText();
+            if (utvonal.isEmpty()) {
+                utvonal = "https://index.hu";
             }
             //Egy weblap
             Page page = new Page();
-            page.setUrl(url);
+            page.setUrl(utvonal);
             //Gyűjtött szavak ide kerülnek:
             ArrayList<String> w = page.getContent();
 
