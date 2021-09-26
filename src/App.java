@@ -18,11 +18,11 @@ import controllers.WordsController;
 import views.MainWindow;
 
 public class App {
-    public static void main(String[] args) throws Exception {
-        MainWindow mainWindow = new MainWindow();
-        new MainController(mainWindow);
-        new CollectorController(mainWindow);
-        new WordsController(mainWindow);
-        mainWindow.setVisible(true);
-    }
+public static void main(String[] args) throws Exception {
+MainWindow mainWindow = new MainWindow();
+new MainController(mainWindow);
+new CollectorController(mainWindow);
+new WordsController(mainWindow);
+mainWindow.setVisible(true);
+}
 }
