@@ -23,6 +23,7 @@ public class MainController {
     MainWindow mainWindow;
     public MainController(MainWindow mainWindow) {
         this.mainWindow = mainWindow;
+    
         
     }
     
