@@ -10,7 +10,10 @@
  * Copyright (c) 2021 Sallai Andras
  * 
  * GNU GPL v2
+ * *  * Refaktorálta Megyeri Márk Máté
+ * 2022.11.21
  */
+
 
 package controllers;
 
