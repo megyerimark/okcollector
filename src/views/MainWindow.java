@@ -162,20 +162,20 @@ public class MainWindow extends JFrame {
             listButtonsPanel.add(saveButton);
             listButtonsPanel.add(Box.createVerticalGlue());
             listButtonsPanel.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
-    bottomP();
+    bottomPanels();
         }
         
-        public void bottomP(){
+        public void bottomPanels(){
 
             bottomPanel = new JPanel();
             bottomPanel.setLayout(new BoxLayout(bottomPanel, BoxLayout.LINE_AXIS));
             bottomPanel.add(listPanel);
             bottomPanel.add(listButtonsPanel);
-            addL();
+            addLlayout();
         }
 
 
-        public void addL(){
+        public void addLlayout(){
             this.setLayout(new BoxLayout(getContentPane(), BoxLayout.PAGE_AXIS));
 
             this.add(appLabel);
@@ -187,12 +187,9 @@ public class MainWindow extends JFrame {
 
         public void status(){
             this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            // this.setSize(300, 250);
+            
             this.pack();
-            /**
-             * A pack() után kell szerepeljen, mert az ablak mérete
-             * csak az után van meg.
-             */
+            
             statusBar = new StatusBar(this.getWidth());
             this.add(statusBar);
 
