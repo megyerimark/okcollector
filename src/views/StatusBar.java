@@ -34,10 +34,10 @@ public class StatusBar extends JPanel {
      * tette bele statuszsáv megvalósítására alkalmas 
      * osztály. 
      */
-    // Ezen lesz a státuszsáv
+   
     JLabel statusLabel;
 
-    // Ez az osztály konstruktora
+   
     public StatusBar(int width) {        
         setBorder(BorderFactory.createBevelBorder(BevelBorder.LOWERED));
         size(width, 25);
@@ -45,20 +45,19 @@ public class StatusBar extends JPanel {
         statusLabel = new JLabel("Kész");
         this.setm("Kész");
         this.add(statusLabel);
-    } // A StatusBar konstruktor vége
+    }
     
-    //Ez állítja be a méretét státuszsornak
+   
     public void size(int x, int y) {
-        // A setMaximumSize() függvény csak Demension osztály képes fogadni
-        // Nem tudtak jobbat?
+     
         setMaximumSize(new Dimension(x, y));
         setMinimumSize(new Dimension(x, y));
         setPreferredSize(new Dimension(x, y));
-    } //A size függvény vége
+    } 
 
-    //A státuszsor tartalmát állítjuk be
+    
     public void setm(String message) {
-        // A statusz üzenetnek külön függvényt csináltunk.
+       
         this.statusLabel.setText(message);
-    } // a setMessge() függvény vége
+    } 
 }
