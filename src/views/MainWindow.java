@@ -10,8 +10,6 @@
  * Copyright (c) 2021 Sallai Andras
  * 
  * GNU GPL v2
- * *  * Refaktorálta Megyeri Márk Máté
- * 2022.11.21
  */
 
 package views;
@@ -67,7 +65,7 @@ public class MainWindow extends JFrame {
         collectorPanel = new JPanel();
         collectorPanel.setLayout(new BoxLayout(collectorPanel, BoxLayout.LINE_AXIS));
         pasteButton = new JButton("Beillesztés");
-        startButton = new JButton("Start");
+        startButton = new JButton("Indít");
         aboutButton = new JButton("Névjegy");
         exitButton = new JButton("Kilépés");
 
@@ -93,7 +91,7 @@ public class MainWindow extends JFrame {
         deleteButton.setPreferredSize(new Dimension(110, 25));
         deleteButton.setMargin(new Insets(20, 20, 20, 20));
 
-        lowercaseButton = new JButton("Kisbetű");
+        lowercaseButton = new JButton("Rendezés");
         lowercaseButton.setMinimumSize(new Dimension(110, 25));
         lowercaseButton.setMaximumSize(new Dimension(110, 25));
         lowercaseButton.setPreferredSize(new Dimension(110, 25));
