@@ -59,9 +59,9 @@ public class CollectorController extends MainController {
             Page page = new Page();
             page.setUrl(utvonal);
             //Gyűjtött szavak ide kerülnek:
-            ArrayList<String> w = page.getContent();
+            ArrayList<String> words = page.getContent();
 
-            for(String word : w) {
+            for(String word : words) {
                 if (mainWindow.wordsModel.indexOf(word)<0) {
                     mainWindow.wordsModel.addElement(word);
                 }                
