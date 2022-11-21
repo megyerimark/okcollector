@@ -116,27 +116,27 @@ public class MainWindow extends JFrame {
         deleteButton.setPreferredSize(new Dimension(110, 25));
         deleteButton.setMargin(new Insets(20, 20, 20, 20));
 
-        smallWordBtn();
+        sortButtons();
         }
 
-        public void smallWordBtn(){
+        public void sortButtons(){
             sortButton = new JButton("Rendezés");
             sortButton.setMinimumSize(new Dimension(110, 25));
             sortButton.setMaximumSize(new Dimension(110, 25));
             sortButton.setPreferredSize(new Dimension(110, 25));
 
-            filterBtn();
+            filterButton();
         }
-        public void filterBtn(){
+        public void filterButton(){
             filterButton = new JButton("Szűrés");
             filterButton.setMinimumSize(new Dimension(110, 25));
             filterButton.setMaximumSize(new Dimension(110, 25));
             filterButton.setPreferredSize(new Dimension(110, 25));
     
-            saves();
+            savesButton();
 
         }
-        public void saves(){
+        public void savesButton(){
             
         saveButton = new JButton("Mentés");
         saveButton.setMinimumSize(new Dimension(110, 25));
