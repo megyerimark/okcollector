@@ -29,36 +29,30 @@ import views.MainWindow;
     Ha megszüntetjük szükség lesz egy mainWindow adattagra. 
 */
 
-// A CollectorController osztály
+
 public class CollectorController extends MainController {
-    //A CollectorController osztály konstruktora    
+  
     public CollectorController(MainWindow mainWindow) {
         super(mainWindow);
-        //A vágólap tartalmát beillesztjük
-
-
-        /**************** pasteButton ****************************/
+     
 
         mainWindow.pasteButton.addActionListener(event -> {
             System.out.println("beillesztés");
             mainWindow.urlField.paste();
-        }); // A pasteButton eseménykezelő vége
+        }); 
 
 
-        /**************** startButton ****************************/
-
-
-        //Indul a szógyűjtés
+      
         mainWindow.startButton.addActionListener(event -> {
-            // URL
+          
             String utvonal = mainWindow.urlField.getText();
             if (utvonal.isEmpty()) {
                 utvonal = "https://index.hu";
             }
-            //Egy weblap
+          
             Page page = new Page();
             page.setUrl(utvonal);
-            //Gyűjtött szavak ide kerülnek:
+       
             ArrayList<String> words = page.getContent();
 
             for(String word : words) {
@@ -68,10 +62,9 @@ public class CollectorController extends MainController {
             } // for ciklus vége
             Integer wordCount = mainWindow.wordsModel.getSize();
             mainWindow.statusBar.setm("Szavak: " + wordCount.toString());
-        }); //A start eseménykezelő vége
+        }); 
 
-         /**************** VÉGE ****************************/
-
+     
 
     }   
 }
